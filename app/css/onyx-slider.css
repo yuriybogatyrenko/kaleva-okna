@@ -1,0 +1,230 @@
+.onyx-carousel__units {
+    position: relative;
+    height: 650px;
+    margin-bottom: 30px;
+}
+
+.onyx-carousel__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.onyx-carousel__item.active {
+    opacity: 1;
+    z-index: 5;
+}
+
+.onyx-carousel__subitem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.onyx-carousel__subitem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.onyx-carousel__subitem.active {
+    opacity: 1;
+    z-index: 5;
+}
+
+.onyx-carousel__item .pag_units {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: #fff;
+    width: 100px;
+    z-index: 200;
+    padding: 10px;
+    font-size: 0;
+}
+
+.onyx-carousel__item .pag_units img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+.onyx-carousel__item .pag_item {
+    position: relative;
+    cursor: pointer;
+}
+
+.onyx-carousel__item .pag_item:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #007dc5;
+    display: block;
+    content: '';
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.onyx-carousel__item .pag_item.active:after {
+    opacity: 1;
+}
+
+.onyx-carousel__pagination {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.onyx-carousel__pagination-wrapper {
+    position: relative;
+    left: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.onyx-carousel__pagination-item {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 20%;
+    cursor: pointer;
+}
+
+.onyx-carousel__pagination-item:after {
+    content: '';
+    margin-bottom: 120px;
+    display: block;
+}
+
+.onyx-carousel__pagination-item:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 5;
+    opacity: 0;
+}
+
+.onyx-carousel__pagination-item:hover:before {
+    opacity: 1;
+}
+
+.onyx-carousel__pagination-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.onyx-carousel__pagination-item .descr_bl {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 15px;
+    font-size: 15px;
+    color: #000;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    white-space: normal;
+}
+
+.onyx-carousel__pagination-item.active .descr_bl {
+    opacity: 1;
+}
+
+.onyx-carousel__pagination-item .descr_bl:after {
+    display: block;
+    content: '';
+    height: 1px;
+    left: 20px;
+    top: 0;
+    right: 20px;
+    position: absolute;
+    background: #007dc5;
+}
+
+.onyx-carousel {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+}
+
+.onyx-carousel__pagination-left, .onyx-carousel__pagination-right {
+    border: 10px solid transparent;
+    border-left: 10px solid #000;
+    position: absolute;
+    bottom: 40px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.onyx-carousel__pagination-left:hover, .onyx-carousel__pagination-right:hover {
+    opacity: 0.5;
+}
+
+.onyx-carousel__pagination-left {
+    border: 10px solid transparent;
+    border-right: 10px solid #000;
+    right: auto;
+    left: 0;
+}
