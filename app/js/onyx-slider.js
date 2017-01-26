@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $(".onyx-carousel").each(function () {
+    /*$(".onyx-carousel").each(function () {
         var carousel = $(this),
             step = carousel.find(".onyx-dot").outerWidth(),
             coordinate = 0,
@@ -148,7 +148,7 @@ $(document).ready(function () {
         }
 
 
-    });
+    });*/
 
 
 });
